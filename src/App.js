@@ -1,9 +1,14 @@
 import Counter from "./components/Counter";
+import Todos from "./components/Todos";
 
 const App = () => {
-  <div>
-    <Counter />
-  </div>
-}
+  return (
+    <div>
+      <Counter number={0} />
+      <hr />
+      <Todos />
+    </div>
+  );
+};
 
 export default App;
